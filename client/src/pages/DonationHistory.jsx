@@ -58,7 +58,7 @@ function DonationHistory() {
                   className='bg-white dark:bg-slate-900 p-6 rounded-3xl shadow-xl flex items-center gap-6'
                 >
                   <img
-                    src={`http://localhost:5000/${donation.campaign.image}`}
+                    src={`${import.meta.env.VITE_API_BASE_URL || 'http://localhost:5000'}/${donation.campaign.image}`}
                     alt='campaign'
                     className='w-32 h-32 rounded-2xl object-cover'
                   />

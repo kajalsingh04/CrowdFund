@@ -346,7 +346,7 @@ function Explore() {
                     title: campaign.title,
                     raised: campaign.raisedAmount,
                     goal: campaign.targetAmount,
-                    image: `http://localhost:5000/${campaign.image}`,
+                    image: `${import.meta.env.VITE_API_BASE_URL || 'http://localhost:5000'}/${campaign.image}`,
                   }}
                 />
               ))}

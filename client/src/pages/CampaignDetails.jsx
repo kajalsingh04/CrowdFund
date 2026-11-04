@@ -79,7 +79,7 @@
 
 //       <div className='max-w-6xl mx-auto py-20 px-6'>
 //         <img
-//           src={`http://localhost:5000/${campaign.image}`}
+//           src={`${import.meta.env.VITE_API_BASE_URL || 'http://localhost:5000'}/${campaign.image}`}
 //           alt='campaign'
 //           className='w-full h-[500px] object-cover rounded-3xl shadow-xl'
 //         />
@@ -567,7 +567,7 @@ function CampaignDetails() {
         {/* Hero */}
         <div className="cd-hero">
           <img
-            src={`http://localhost:5000/${campaign.image}`}
+            src={`${import.meta.env.VITE_API_BASE_URL || 'http://localhost:5000'}/${campaign.image}`}
             alt="campaign"
             className="cd-hero-img"
           />

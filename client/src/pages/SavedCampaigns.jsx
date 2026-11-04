@@ -56,7 +56,7 @@ function SavedCampaigns() {
                   className='bg-white dark:bg-slate-900 rounded-3xl overflow-hidden shadow-xl'
                 >
                   <img
-                    src={`http://localhost:5000/${bookmark.campaign.image}`}
+                    src={`${import.meta.env.VITE_API_BASE_URL || 'http://localhost:5000'}/${bookmark.campaign.image}`}
                     alt='campaign'
                     className='w-full h-60 object-cover'
                   />

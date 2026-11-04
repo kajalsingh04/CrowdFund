@@ -190,7 +190,7 @@
 //                 >
 
 //                   <img
-//                     src={`http://localhost:5000/${campaign.image}`}
+//                     src={`${import.meta.env.VITE_API_BASE_URL || 'http://localhost:5000'}/${campaign.image}`}
 //                     alt='campaign'
 //                     className='w-full h-60 object-cover rounded-2xl'
 //                   />
@@ -900,7 +900,7 @@ function Dashboard() {
 
                     <div className="db-card-img-wrap">
                       <img
-                        src={`http://localhost:5000/${campaign.image}`}
+                        src={`${import.meta.env.VITE_API_BASE_URL || 'http://localhost:5000'}/${campaign.image}`}
                         alt="campaign"
                         className="db-card-img"
                       />
